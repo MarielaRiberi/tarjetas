@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Seccion from "./components/Seccion";
+
+
+
+
+
+const lista = [
+    {
+        id: 1,
+        seccion: "Botellones de Agua ",
+        texto: "Retornables IVESS",
+        textoBoton: "COMPRAR",
+        img: "https://www.somoselagua.com.ar/fotos/productos/2.jpg"
+    },
+    {
+        id: 2,
+        seccion: "Sifones de Soda Retornables",
+        texto: "IVESS",
+        textoBoton: "COMPRAR",
+        img: "https://www.somoselagua.com.ar/fotos/productos/4.jpg"
+    },
+    {
+        id: 3,
+        seccion: "Botellas de Agua sin gas",
+        texto: "IVESS",
+        textoBoton: "COMPRAR",
+        img: "https://www.somoselagua.com.ar/fotos/productos/1.jpg"
+    },
+    {
+        id: 4,
+        seccion: "Botellones de agua",
+        texto: "descartables IVESS",
+        textoBoton: "COMPRAR",
+        img: "https://www.somoselagua.com.ar/fotos/productos/3.jpg"
+    }
+]
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+        <Seccion lista = {lista} />
+        </>
+    );
 }
 
 export default App;
